@@ -22,3 +22,7 @@ function fun(str, a, b){
 
 let val1 = fun('add',5,6)
 val1();
+
+// this val1 will be called because its value stores the function which is returned from the fun funciton.
+// it stored the value like function :[] ; and we can call the val1() like an actual function 
+// This is the power of javascript only.

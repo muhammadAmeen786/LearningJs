@@ -7,12 +7,15 @@ function fun(){
     fun2();
 
     function fun2(){
-        console.log(hii);
+        
+        console.log(hii); // jab ki iss function k pass koi variable nahee hai apna
+                            // but ye still out put 10 hee dega because of scope chaining.
     }
 }
 
-var hii = 10;
+
 fun();
+let hii = 10;
 console.log(hii);
 
 // the output of this function would be 10 10 because the inneer fucntion is lexically bound tou outer functions.

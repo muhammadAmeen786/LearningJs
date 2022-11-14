@@ -1,0 +1,16 @@
+// let num = 0;
+// let x = setInterval(()=>{
+//     console.log(num++);
+
+//     if(num==10){
+//         clearInterval(x);
+//     }
+// }, 1000)
+
+// Set Interval and clear interval are not part
+// of the javaScript. 
+// they are the APi's which can be used.
+// Time and JavaScript don't wait for anyone.
+//that is it my bois.
+
+setTime out and set Interval are not the part of the js but they are the apis which help us in controlling the behaviour of the js.

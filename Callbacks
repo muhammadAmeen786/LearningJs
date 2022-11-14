@@ -1,0 +1,55 @@
+//lets learn about call Backs.
+//Call back is a function passed as argument. And when we pass something as an argument we can run that as well.
+//Like below.
+
+// function fun1(){
+//     console.log("fun1 runs");
+
+// }
+
+// function fun2(){
+//     setTimeout(()=>{
+//         console.log("fun2 runs");
+
+//     },2000);
+    
+
+// }
+// function fun3(){
+
+//     console.log("fun3 runs");
+
+// }
+
+// fun1();
+// fun2();
+// fun3();
+// Here we will get the output as fun1 runs fun3 runs and fun2 runs 
+// all because of the setTimeOut. 
+
+function fun1(){
+    console.log("fun1 runs");
+
+}
+
+function fun2(){
+    setTimeout(()=>{
+        console.log("fun2 runs");
+        fun3();
+
+    },2000);
+    
+
+}
+function fun3(){
+
+    console.log("fun3 runs");
+
+}
+
+fun1();
+fun2(fun3); // fun3 is a  call back here.
+// Now we will get an ouput fun1 runs  then fun2 runs then fun3 runs.
+// It is all because of the callbacks.
+
+
